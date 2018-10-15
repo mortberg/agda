@@ -64,25 +64,12 @@ ImportWarningsB.agda:14,1-16
 Empty REWRITE pragma
 when scope checking the declaration
   {-# REWRITE #-}
-ImportWarnings.agda:6,1-16
-Empty REWRITE pragma
-when scope checking the declaration
-  {-# REWRITE #-}
 
 ———— All done; warnings encountered ————————————————————————
 
-ImportWarningsB.agda:14,1-16
-Empty REWRITE pragma
-when scope checking the declaration
-  {-# REWRITE #-}
-
-Issue1988.agda:9,1-26
-Builtin REFL no longer exists. It is now bound by BUILTIN EQUALITY
-when checking the pragma BUILTIN REFL refl
-
-Issue708quote.agda:9,1-29
-Unreachable clause
-when checking the definition of example
+Unreachable.agda:21,1-23,19
+Unreachable clauses
+when checking the definition of unreachable
 
 RewritingEmptyPragma.agda:3,1-16
 Empty REWRITE pragma
@@ -143,15 +130,19 @@ be an error in Agda 2.6.
 when scope checking the declaration
   {-# IMPORT Data.Maybe #-}
 
+Issue708quote.agda:9,1-29
+Unreachable clause
+when checking the definition of example
+
 Issue2243.agda:9,1-12
 Unreachable clause
 when checking the definition of f
 
-Unreachable.agda:21,1-23,19
-Unreachable clauses
-when checking the definition of unreachable
+Issue1988.agda:9,1-26
+Builtin REFL no longer exists. It is now bound by BUILTIN EQUALITY
+when checking the pragma BUILTIN REFL refl
 
-ImportWarnings.agda:6,1-16
+ImportWarningsB.agda:14,1-16
 Empty REWRITE pragma
 when scope checking the declaration
   {-# REWRITE #-}
