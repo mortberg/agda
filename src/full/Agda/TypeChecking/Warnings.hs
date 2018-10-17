@@ -69,7 +69,7 @@ warnings ws = do
     tcwarn <- warning_ w'
     if wmode ^. warn2Error && warningName w' `elem` wmode ^. warningSet
     then pure (Just tcwarn)
-    else Nothing <$ stTCWarnings %= add w' tcwarn
+    else Nothing <$ (stTCWarnings %= add w' tcwarn)
 
   let errs = catMaybes merrs
   unless (null errs) $ typeError $ NonFatalErrors errs
@@ -90,7 +90,7 @@ data WhichWarnings =
 isUnsolvedWarning :: Warning -> Bool
 isUnsolvedWarning w = warningName w `elem` unsolvedWarnings
 
-xclassifyWarning :: Warning -> WhichWarnings
+classifyWarning :: Warning -> WhichWarnings
 classifyWarning w =
   if warningName w `elem` errorWarnings
   then ErrorWarnings
