@@ -97,8 +97,6 @@ errorWarnings :: Set WarningName
 errorWarnings = Set.fromList
   [ CoverageIssue_
   , GenericNonFatalError_
-  , MissingDefinitions_
-  , NotAllowedInMutual_
   , NotStrictlyPositive_
   , OverlappingTokensWarning_
   , SafeFlagPostulate_
@@ -108,7 +106,6 @@ errorWarnings = Set.fromList
   , SafeFlagPrimTrustMe_
   , SafeFlagNoPositivityCheck_
   , SafeFlagPolarity_
-  , SafeFlagNoUniverseCheck_
   , TerminationIssue_
   , UnsolvedMetaVariables_
   , UnsolvedInteractionMetas_
