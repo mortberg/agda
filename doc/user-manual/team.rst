@@ -33,6 +33,7 @@ Contributors (alphabetically sorted):
 * Stefan Monnier
 * Darin Morrison
 * Guilhem Moulin
+* Anders Mörtberg
 * Nicolas Pouillard
 * Benjamin Price
 * Andrés Sicard-Ramírez
